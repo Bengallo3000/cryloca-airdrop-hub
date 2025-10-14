@@ -1,5 +1,12 @@
+/* 
+ * Cryloca.eu - Homepage
+ * Diese Seite zeigt alle verfügbaren Crypto Airdrops an
+ * Optimiert für SEO und beste User Experience
+ */
+
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import AirdropCard from "@/components/AirdropCard";
 import { airdrops } from "@/data/airdrops";
 
@@ -7,7 +14,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Cryloca.eu - Die besten Crypto Airdrops 2025</title>
+        <title>Cryloca.eu - Die besten Crypto Airdrops 2025 | Kostenlose Tokens & NFTs</title>
         <meta 
           name="description" 
           content="Entdecken Sie die besten Crypto Airdrops 2025 auf Cryloca.eu. Kostenlose Tokens, NFTs und exklusive Rewards. Täglich aktualisiert!" 
@@ -62,15 +69,7 @@ const Index = () => {
           </section>
         </main>
 
-        {/* Footer */}
-        <footer className="border-t border-border mt-20">
-          <div className="container mx-auto px-4 py-8 text-center text-muted-foreground">
-            <p>&copy; 2025 Cryloca.eu - Alle Rechte vorbehalten</p>
-            <p className="text-sm mt-2">
-              Die besten Crypto Airdrops für DeFi, NFT, Gaming und mehr
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );

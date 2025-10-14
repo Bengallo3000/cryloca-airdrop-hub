@@ -4,13 +4,32 @@ import heroBanner from "@/assets/hero-banner.jpg";
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Banner Placeholder */}
-      <div className="w-full h-32 md:h-48 overflow-hidden">
-        <img
-          src={heroBanner}
-          alt="Cryloca Banner - Crypto Airdrops"
-          className="w-full h-full object-cover"
-        />
+      {/* Banner Placeholder - Multiple Sizes for Responsive Display */}
+      <div className="w-full overflow-hidden">
+        {/* Desktop Banner: 1920x400 */}
+        <div className="hidden lg:block h-40">
+          <img
+            src={heroBanner}
+            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Tablet Banner: 1024x300 */}
+        <div className="hidden md:block lg:hidden h-32">
+          <img
+            src={heroBanner}
+            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Mobile Banner: 768x200 */}
+        <div className="block md:hidden h-24">
+          <img
+            src={heroBanner}
+            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
       
       {/* Navigation */}

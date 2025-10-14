@@ -1,3 +1,9 @@
+/* 
+ * Cryloca.eu - Airdrop Detail Seite
+ * Zeigt detaillierte Informationen zu einem spezifischen Airdrop
+ * Inkl. Anforderungen, Belohnungen und Teilnahmebedingungen
+ */
+
 import { useParams, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
@@ -7,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Trophy, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const AirdropDetail = () => {
   const { slug } = useParams();
@@ -181,6 +188,8 @@ const AirdropDetail = () => {
             </div>
           </div>
         </main>
+
+        <Footer />
       </div>
     </>
   );
