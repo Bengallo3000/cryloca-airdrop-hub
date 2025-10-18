@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import heroBanner from "@/assets/hero-banner.jpg";
+import crylocaLogo from "@/assets/cryloca-logo.png";
 
 const Header = () => {
   return (
@@ -35,16 +36,15 @@ const Header = () => {
       {/* Navigation */}
       <div className="container mx-auto px-4">
         <nav className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex items-center space-x-2">
-              {/* Logo Placeholder */}
-              <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-                Cryloca.eu
-              </span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src={crylocaLogo} 
+              alt="Cryloca.eu - Crypto Airdrops Logo" 
+              className="w-12 h-12 rounded-full"
+            />
+            <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
+              Cryloca.eu
+            </span>
           </Link>
           
           <div className="flex items-center space-x-6">

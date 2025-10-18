@@ -95,11 +95,13 @@ const AirdropDetail = () => {
               <Card className="border-border/50 gradient-card">
                 <CardHeader>
                   <div className="flex items-start gap-4 mb-4">
-                    {/* Logo Placeholder */}
-                    <div className="w-20 h-20 rounded-xl gradient-primary flex items-center justify-center shadow-lg flex-shrink-0">
-                      <span className="text-white font-bold text-3xl">
-                        {airdrop.title.charAt(0)}
-                      </span>
+                    {/* Airdrop Logo */}
+                    <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center shadow-lg flex-shrink-0 p-3">
+                      <img 
+                        src={airdrop.logoUrl} 
+                        alt={`${airdrop.title} Logo`}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">

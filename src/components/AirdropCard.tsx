@@ -22,11 +22,13 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
         
         <CardHeader className="relative">
           <div className="flex items-start justify-between mb-2">
-            {/* Logo Placeholder */}
-            <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-xl">
-                {airdrop.title.charAt(0)}
-              </span>
+            {/* Airdrop Logo */}
+            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center shadow-md p-2">
+              <img 
+                src={airdrop.logoUrl} 
+                alt={`${airdrop.title} Logo`}
+                className="w-full h-full object-contain"
+              />
             </div>
             <Badge className={statusColors[airdrop.status]} variant="outline">
               {airdrop.status}
