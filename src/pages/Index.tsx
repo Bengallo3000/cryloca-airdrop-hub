@@ -1,7 +1,7 @@
 /* 
  * Cryloca.eu - Homepage
- * Diese Seite zeigt alle verfügbaren Crypto Airdrops an
- * Optimiert für SEO und beste User Experience
+ * This page displays all available Crypto Airdrops
+ * Optimized for SEO and best user experience
  */
 
 import { Helmet } from "react-helmet";
@@ -15,10 +15,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Cryloca.eu - Die besten Crypto Airdrops 2025 | Kostenlose Tokens & NFTs</title>
+        <title>Cryloca.eu - Best Crypto Airdrops 2025 | Free Tokens & NFTs</title>
         <meta 
           name="description" 
-          content="Entdecken Sie die besten Crypto Airdrops 2025 auf Cryloca.eu. Kostenlose Tokens, NFTs und exklusive Rewards. Täglich aktualisiert!" 
+          content="Discover the best Crypto Airdrops 2025 on Cryloca.eu. Free Tokens, NFTs, and exclusive Rewards. Updated daily!" 
         />
         <link rel="canonical" href="https://cryloca.eu" />
       </Helmet>
@@ -36,11 +36,11 @@ const Index = () => {
           <section className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-pulse">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Täglich neue Airdrops</span>
+              <span className="text-sm font-medium text-primary">Daily New Airdrops</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 animate-fade-in">
-              <span className="text-gradient">Die besten</span>
+              <span className="text-gradient">The Best</span>
               <br />
               <span className="text-foreground">Crypto Airdrops</span>
               <br />
@@ -48,10 +48,10 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-12 leading-relaxed">
-              Entdecken Sie täglich aktualisierte <span className="text-accent font-semibold">Airdrops</span> und verdienen Sie 
-              kostenlose <span className="text-primary font-semibold">Kryptowährungen</span>, NFTs und exklusive Rewards. 
+              Discover daily updated <span className="text-accent font-semibold">Airdrops</span> and earn 
+              free <span className="text-primary font-semibold">Cryptocurrencies</span>, NFTs, and exclusive Rewards. 
               <br />
-              <span className="text-foreground/80">Verpassen Sie keine Gelegenheit!</span>
+              <span className="text-foreground/80">Don't miss any opportunity!</span>
             </p>
 
             {/* Stats */}
@@ -59,12 +59,12 @@ const Index = () => {
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
                 <TrendingUp className="w-8 h-8 text-accent mx-auto mb-2" />
                 <div className="text-3xl font-bold text-foreground">{airdrops.length}</div>
-                <div className="text-sm text-muted-foreground">Aktive Airdrops</div>
+                <div className="text-sm text-muted-foreground">Active Airdrops</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
                 <Gift className="w-8 h-8 text-primary mx-auto mb-2" />
                 <div className="text-3xl font-bold text-foreground">$500k+</div>
-                <div className="text-sm text-muted-foreground">Gesamtwert</div>
+                <div className="text-sm text-muted-foreground">Total Value</div>
               </div>
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
                 <Rocket className="w-8 h-8 text-accent mx-auto mb-2" />
@@ -74,7 +74,7 @@ const Index = () => {
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 hover-lift">
                 <Sparkles className="w-8 h-8 text-primary mx-auto mb-2" />
                 <div className="text-3xl font-bold text-foreground">100%</div>
-                <div className="text-sm text-muted-foreground">Kostenlos</div>
+                <div className="text-sm text-muted-foreground">Free</div>
               </div>
             </div>
           </section>
@@ -82,16 +82,16 @@ const Index = () => {
           {/* Airdrops Grid */}
           <section id="airdrops">
             <div className="flex items-center justify-between mb-10">
-              <h2 className="text-4xl md:text-5xl font-bold text-gradient">Aktuelle Airdrops</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-gradient">Current Airdrops</h2>
               <div className="flex gap-2 items-center bg-primary/10 border border-primary/30 rounded-full px-4 py-2">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-primary">
-                  {airdrops.length} verfügbar
+                  {airdrops.length} available
                 </span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
               {airdrops.map((airdrop, index) => (
                 <div
                   key={airdrop.id}
@@ -112,40 +112,40 @@ const Index = () => {
             <div className="max-w-4xl mx-auto text-center relative z-10">
               <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-6">
                 <Gift className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Was sind Crypto Airdrops?</span>
+                <span className="text-sm font-medium text-primary">What are Crypto Airdrops?</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gradient">
-                Verdienen Sie kostenlose Kryptowährungen
+                Earn Free Cryptocurrencies
               </h2>
               
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-8">
-                Crypto Airdrops sind <span className="text-accent font-semibold">kostenlose Token-Verteilungen</span> von 
-                Blockchain-Projekten an ihre Community. Sie dienen dazu, neue Nutzer zu gewinnen, die Bekanntheit zu steigern 
-                und frühe Unterstützer zu belohnen.
+                Crypto Airdrops are <span className="text-accent font-semibold">free token distributions</span> from 
+                blockchain projects to their community. They serve to attract new users, increase awareness, 
+                and reward early supporters.
               </p>
               
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                Auf <span className="text-primary font-bold">Cryloca.eu</span> finden Sie täglich aktualisierte Informationen 
-                zu den besten Airdrop-Möglichkeiten aus den Bereichen 
-                <span className="text-accent font-semibold"> DeFi, NFT, Gaming, Metaverse</span> und mehr.
+                On <span className="text-primary font-bold">Cryloca.eu</span> you'll find daily updated information 
+                about the best airdrop opportunities from the fields of 
+                <span className="text-accent font-semibold"> DeFi, NFT, Gaming, Metaverse</span> and more.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-6 border border-border">
                   <div className="text-4xl mb-3">🎯</div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">Verifiziert</h3>
-                  <p className="text-sm text-muted-foreground">Alle Airdrops werden sorgfältig geprüft</p>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">Verified</h3>
+                  <p className="text-sm text-muted-foreground">All airdrops are carefully verified</p>
                 </div>
                 <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-6 border border-border">
                   <div className="text-4xl mb-3">⚡</div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">Schnell</h3>
-                  <p className="text-sm text-muted-foreground">Täglich neue Updates und Airdrops</p>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">Fast</h3>
+                  <p className="text-sm text-muted-foreground">Daily new updates and airdrops</p>
                 </div>
                 <div className="bg-background/50 backdrop-blur-sm rounded-2xl p-6 border border-border">
                   <div className="text-4xl mb-3">💎</div>
-                  <h3 className="text-xl font-bold mb-2 text-foreground">Wertvoll</h3>
-                  <p className="text-sm text-muted-foreground">Hochwertige Projekte mit Potenzial</p>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">Valuable</h3>
+                  <p className="text-sm text-muted-foreground">High-quality projects with potential</p>
                 </div>
               </div>
             </div>

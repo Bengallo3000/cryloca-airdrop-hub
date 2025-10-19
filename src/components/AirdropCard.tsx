@@ -12,17 +12,17 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
   const statusConfig = {
     active: {
       variant: "success" as const,
-      label: "Aktiv",
+      label: "Active",
       icon: <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />,
     },
     upcoming: {
       variant: "default" as const,
-      label: "Bald",
+      label: "Soon",
       icon: <Clock className="w-3 h-3" />,
     },
     ended: {
       variant: "outline" as const,
-      label: "Beendet",
+      label: "Ended",
       icon: null,
     },
   };

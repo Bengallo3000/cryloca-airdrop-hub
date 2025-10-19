@@ -6,7 +6,7 @@ import { Sparkles } from "lucide-react";
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b-2 border-primary/20 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
-      {/* Banner mit verschiedenen Größen für responsive Anzeige */}
+      {/* Responsive Banner */}
       <div className="w-full overflow-hidden relative">
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80 z-10" />
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="hidden lg:block h-40 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            alt="Cryloca.eu - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="hidden md:block lg:hidden h-32 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            alt="Cryloca.eu - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="block md:hidden h-24 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Die besten Crypto Airdrops 2025"
+            alt="Cryloca.eu - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>

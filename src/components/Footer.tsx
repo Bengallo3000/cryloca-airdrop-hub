@@ -17,20 +17,20 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="text-center text-muted-foreground">
           <p className="font-semibold text-lg mb-2">Cryloca.eu</p>
-          <p>&copy; 2025 Cryloca.eu - Alle Rechte vorbehalten</p>
+          <p>&copy; 2025 Cryloca.eu - All Rights Reserved</p>
           <p className="text-sm mt-2">
-            Die besten Crypto Airdrops für DeFi, NFT, Gaming und mehr
+            The Best Crypto Airdrops for DeFi, NFT, Gaming and more
           </p>
           <p className="text-xs mt-4 text-muted-foreground/50">
-            Disclaimer: Cryloca.eu bietet Informationen zu Airdrops. 
-            Bitte führen Sie Ihre eigene Recherche durch, bevor Sie an einem Airdrop teilnehmen.
+            Disclaimer: Cryloca.eu provides information about airdrops. 
+            Please do your own research before participating in any airdrop.
           </p>
         </div>
         
         {/* Hidden visitor counter - white text on white background, no contrast */}
         <div className="text-center mt-4" aria-hidden="true">
           <span className="text-background select-none" style={{ color: 'hsl(var(--background))' }}>
-            Besucher: {visitorCount}
+            Visitors: {visitorCount}
           </span>
         </div>
       </div>
