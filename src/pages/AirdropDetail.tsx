@@ -1,5 +1,5 @@
 /* 
- * Cryloca.eu - Airdrop Detail Page
+ * CryptoHunter.top - Airdrop Detail Page
  * Displays detailed information about a specific airdrop
  * Including requirements, rewards and participation conditions
  */
@@ -46,7 +46,7 @@ const AirdropDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{airdrop.metaTitle || `${airdrop.title} | Cryloca.eu`}</title>
+        <title>{airdrop.metaTitle || `${airdrop.title} | CryptoHunter.top`}</title>
         <meta 
           name="description" 
           content={airdrop.metaDescription || airdrop.shortDescription} 
@@ -55,12 +55,12 @@ const AirdropDetail = () => {
           name="keywords" 
           content={airdrop.metaKeywords || `${airdrop.category}, airdrop, crypto`} 
         />
-        <link rel="canonical" href={`https://cryloca.eu/airdrop/${airdrop.slug}`} />
+        <link rel="canonical" href={`https://cryptohunter.top/airdrop/${airdrop.slug}`} />
         
         <meta property="og:title" content={airdrop.metaTitle || airdrop.title} />
         <meta property="og:description" content={airdrop.metaDescription || airdrop.shortDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://cryloca.eu/airdrop/${airdrop.slug}`} />
+        <meta property="og:url" content={`https://cryptohunter.top/airdrop/${airdrop.slug}`} />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -70,11 +70,11 @@ const AirdropDetail = () => {
             "description": airdrop.shortDescription,
             "author": {
               "@type": "Organization",
-              "name": "Cryloca.eu"
+              "name": "CryptoHunter.top"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Cryloca.eu"
+              "name": "CryptoHunter.top"
             }
           })}
         </script>

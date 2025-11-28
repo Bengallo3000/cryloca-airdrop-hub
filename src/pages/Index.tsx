@@ -1,5 +1,5 @@
 /* 
- * Cryloca.eu - Homepage
+ * CryptoHunter.top - Homepage
  * This page displays all available Crypto Airdrops
  * Optimized for SEO and best user experience
  */
@@ -15,12 +15,12 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Cryloca.eu - Best Crypto Airdrops 2025 | Free Tokens & NFTs</title>
+        <title>CryptoHunter.top - Best Crypto Airdrops 2025 | Free Tokens & NFTs</title>
         <meta 
           name="description" 
-          content="Discover the best Crypto Airdrops 2025 on Cryloca.eu. Free Tokens, NFTs, and exclusive Rewards. Updated daily!" 
+          content="Discover the best Crypto Airdrops 2025 on CryptoHunter.top. Free Tokens, NFTs, and exclusive Rewards. Updated daily!" 
         />
-        <link rel="canonical" href="https://cryloca.eu" />
+        <link rel="canonical" href="https://cryptohunter.top" />
       </Helmet>
 
       <div className="min-h-screen bg-background relative overflow-hidden">
@@ -126,7 +126,7 @@ const Index = () => {
               </p>
               
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                On <span className="text-primary font-bold">Cryloca.eu</span> you'll find daily updated information 
+                On <span className="text-primary font-bold">CryptoHunter.top</span> you'll find daily updated information 
                 about the best airdrop opportunities from the fields of 
                 <span className="text-accent font-semibold"> DeFi, NFT, Gaming, Metaverse</span> and more.
               </p>
