@@ -15,7 +15,7 @@ const Header = () => {
         <div className="hidden lg:block h-40 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Best Crypto Airdrops 2025"
+            alt="CryptoHunter.top - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="hidden md:block lg:hidden h-32 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Best Crypto Airdrops 2025"
+            alt="CryptoHunter.top - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="block md:hidden h-24 relative">
           <img
             src={heroBanner}
-            alt="Cryloca.eu - Best Crypto Airdrops 2025"
+            alt="CryptoHunter.top - Best Crypto Airdrops 2025"
             className="w-full h-full object-cover"
           />
         </div>
@@ -47,13 +47,13 @@ const Header = () => {
               <div className="absolute inset-0 bg-primary/30 blur-xl rounded-full group-hover:bg-primary/50 transition-all duration-300" />
               <img 
                 src={crylocaLogo} 
-                alt="Cryloca.eu - Crypto Airdrops Logo" 
+                alt="CryptoHunter.top - Crypto Airdrops Logo" 
                 className="relative w-14 h-14 rounded-full ring-2 ring-primary/50 group-hover:ring-primary transition-all duration-300 group-hover:scale-110"
               />
             </div>
             <div className="flex flex-col">
               <span className="text-2xl md:text-3xl font-black text-gradient">
-                Cryloca.eu
+                CryptoHunter.top
               </span>
               <span className="text-xs text-muted-foreground group-hover:text-accent transition-colors">
                 Crypto Airdrops 2025
