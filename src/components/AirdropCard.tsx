@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Clock, Trophy, ExternalLink } from "lucide-react";
 import { Airdrop } from "@/data/airdrops";
+import { Link } from "react-router-dom";
 
 interface AirdropCardProps {
   airdrop: Airdrop;
@@ -29,10 +30,8 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
   const config = statusConfig[airdrop.status];
 
   return (
-    <a 
-      href={airdrop.externalUrl} 
-      target="_blank" 
-      rel="noopener noreferrer" 
+    <Link 
+      to={`/airdrop/${airdrop.slug}`}
       className="group block h-full"
     >
       <Card className="h-full transition-all duration-500 hover:scale-[1.03] border-2 border-border/50 hover:border-primary/50 bg-card/80 backdrop-blur-sm gradient-card overflow-hidden relative hover-lift group">
@@ -91,7 +90,7 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
         {/* Bottom gradient line */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </Card>
-    </a>
+    </Link>
   );
 };
 
