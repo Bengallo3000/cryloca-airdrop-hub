@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Clock, Trophy } from "lucide-react";
+import { ArrowRight, Clock, Trophy, ExternalLink } from "lucide-react";
 import { Airdrop } from "@/data/airdrops";
 
 interface AirdropCardProps {
@@ -30,7 +29,12 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
   const config = statusConfig[airdrop.status];
 
   return (
-    <Link to={`/airdrop/${airdrop.slug}`} className="group block h-full">
+    <a 
+      href={airdrop.externalUrl} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="group block h-full"
+    >
       <Card className="h-full transition-all duration-500 hover:scale-[1.03] border-2 border-border/50 hover:border-primary/50 bg-card/80 backdrop-blur-sm gradient-card overflow-hidden relative hover-lift group">
         {/* Glow effect on hover */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -77,9 +81,9 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
             </Badge>
             <div className="flex items-center gap-2 text-primary group-hover:gap-3 transition-all duration-300">
               <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                Details
+                Join Now
               </span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
+              <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
             </div>
           </div>
         </CardContent>
@@ -87,7 +91,7 @@ const AirdropCard = ({ airdrop }: AirdropCardProps) => {
         {/* Bottom gradient line */}
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </Card>
-    </Link>
+    </a>
   );
 };
 
